@@ -1,0 +1,52 @@
+O Python utiliza por convenção o padrão Snake_Case para nomes de variáveis (ou identificadores).
+
+Um exemplo de variáveis em Snake_Case são:
+
+idade_esposa = 20
+perfil_vip = 'Flávio Almeida'
+recibos_em_atraso = 30
+
+---------------------
+
+https://docs.python.org/3/library/
+https://docs.python.org/3/library/random.html
+https://docs.python.org/3/library/functions.html
+https://docs.python.org/3.5/library/functions.html#round
+
+-------------------
+
+random.seed(numero) <- o seed ajuda a determinar o numero randomico da funcao abaixo:
+random.randrange(a,b)
+o seed geralmente utiliza os milissegundos do computador
+
+-------------------
+
+3/2 -> float division
+3//2 -> integer division
+
+-------------------
+
+https://docs.python.org/3/glossary.html
+https://stackoverflow.com/questions/6889747/is-python-interpreted-or-compiled-or-both
+
+----------------------
+
+https://docs.python.org/3.5/index.html
+
+Funções de Strings:
+capitalize, upper, lower, strip, format, startswith, endswith, count, index
+
+https://docs.python.org/3.6/library/stdtypes.html#sequence-types-list-tuple-range
+
+-----------------------------
+
+Para definir um parâmetro como opcional em uma função:
+
+def funcao(parametro="valor padrao") #assim, o parametro sempre terá um valor padrão
+funcao() #se o usuario não passar nada, usará o valor padrao definido
+funcao("casa") #se o usuario passar parametro, usara o valor passado
+
+Na passagem de um parâmetro, é possível nomear o parâmetro que receberá o valor, permitindo assim trabalhar com funções com mais de um parâmetro:
+
+def carrega_palavra_secreta(nome_arquivo="palavras.txt", primeira_linha_valida=0) #função com mais de um parâmetro
+carrega_palavra_secreta(primeira_linha_valida=5, nome_arquivo="frutas.txt") #passando parâmetros explicitamente

@@ -1,0 +1,2 @@
+Coleções: possuem mais de um elemento de um tipo igual ou de diferentes tipos. Exemplo: idade dos diversos usuários de um site; pode-se também com nome e idade
+Uma list pode ser uma coleção de tipos iguais. Ela pode ser acessada de forma aleatória também, informando a posição que eu gostaria de ver [0], é possível também obter o tamanho dela (len), é possível adicionar novos elementos (append)

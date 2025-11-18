@@ -1,0 +1,30 @@
+Factory:
+
+https://pt.wikipedia.org/wiki/Factory_Method
+https://www.thiengo.com.br/padrao-de-projeto-factory-method
+https://sourcemaking.com/design_patterns/factory_method
+https://python-3-patterns-idioms-test.readthedocs.io/en/latest/Factory.html
+
+Livro online sobre Python 3:
+https://python-3-patterns-idioms-test.readthedocs.io/en/latest/index.html
+
+Regex:
+https://www.w3schools.com/python/python_regex.asp
+
+Datetime:
+https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior
+https://www.alura.com.br/artigos/lidando-com-datas-e-horarios-no-python
+
+HTTP, APIs, etc
+https://medium.com/clebertech/como-funciona-uma-requisi%C3%A7%C3%A3o-http-cf76f66fe36e
+https://www.alura.com.br/artigos/diferencas-entre-get-e-post
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers
+
+Testes
+https://dzone.com/articles/7-popular-unit-test-naming
+
+Lei de Demeter
+https://en.wikipedia.org/wiki/Law_of_Demeter
+
+Cenários de testes
+https://www.alura.com.br/artigos/montando-cenarios-de-testes-com-o-pytest
