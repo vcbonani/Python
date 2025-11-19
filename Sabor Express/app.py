@@ -6,6 +6,7 @@ restaurantes = [{'nome':'Pizzaria do Zé', 'categoria':'Pizza', 'ativo':False},
                 {'nome':'Churrascaria Rio Grande', 'categoria':'Churrasco', 'ativo':False}]
 
 def exibir_subtitulo(texto):
+      ''' Essa função exibe os subtítulos a partir do texto passado '''
       os.system('cls')
       linha = '*' * len(texto)
       print(linha)
@@ -13,17 +14,21 @@ def exibir_subtitulo(texto):
       print(linha)
 
 def finalizar_app():
+    ''' Essa função encerra o funcionamento do app '''
     exibir_subtitulo('Encerrando o app...')
 
 def voltar_ao_menu_principal():
+      ''' Essa função faz o app voltar ao menu principal '''
       input('\nAperte qualquer tecla para voltar ao menu principal...')
       main()
 
 def opcao_invalida():
+      ''' Essa função informa que o usuário selecionou uma opção inválida '''
       print('Opção inválida!')
       voltar_ao_menu_principal()
 
 def cadastrar_novo_restaurante():
+      ''' Essa função é responsável por cadastrar um novo restaurante '''
       exibir_subtitulo('Cadastro de novos restaurantes')
       nome_do_restaurante = input('Nome do restaurante: ')
       categoria = input(f'Digite o nome da categoria do restaurante {nome_do_restaurante}: ')
@@ -33,6 +38,7 @@ def cadastrar_novo_restaurante():
       voltar_ao_menu_principal()
 
 def listar_restaurantes():
+      ''' Essa função lista todos os restaurantes cadastrados '''
       exibir_subtitulo('Lista dos restaurantes cadastrados')
       mensagem = (f'{'NOME DO RESTAURANTE'.ljust(30)} | {'CATEGORIA'.ljust(30)} | {'Status'}')
       print(mensagem)
@@ -45,6 +51,7 @@ def listar_restaurantes():
       voltar_ao_menu_principal()
 
 def alternar_estado_do_restaurante():
+      ''' Essa função alterna o estado de um restaurante entre ativo e inativo '''
       exibir_subtitulo('Alternando o estado do restaurante')
       nome_restaurante = input('Digite o nome do restaurante que deseja alternar o estado: ')
       restaurante_encontrado = False
@@ -60,7 +67,7 @@ def alternar_estado_do_restaurante():
       voltar_ao_menu_principal()
 
 def exibir_nome_do_app():
-
+      ''' Essa função exibe o nome do app '''
       print('''
                   _                                                    
             | |                                                   
@@ -73,6 +80,7 @@ def exibir_nome_do_app():
             ''')
 
 def exibir_opcoes():
+      ''' Essa função exibe as opções do app '''
       print('MENU\n')
       print('1. Cadastrar restaurante')
       print('2. Listar restaurantes')
@@ -80,6 +88,7 @@ def exibir_opcoes():
       print('4. Sair\n')
 
 def escolher_opcao():
+      ''' Essa função permite ao usuário escolher a opção no app '''
       try:
             opcao_escolhida = int(input('Escolha uma opção: '))
             match opcao_escolhida:
@@ -98,6 +107,7 @@ def escolher_opcao():
 
 
 def main():
+    ''' Essa é a função de início do app '''
     os.system('cls')
     exibir_nome_do_app()
     exibir_opcoes()
